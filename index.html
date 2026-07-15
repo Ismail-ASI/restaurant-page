@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Tavola — Trattoria Italienne</title>
+    <meta name="description" content="Bella Tavola, trattoria italienne authentique : pizzas au feu de bois, pâtes maison et desserts traditionnels. Réservez votre table.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header id="header">
+        <a href="#hero" class="brand">
+            <img src="images/logo-restaurant.jpg" alt="Logo Bella Tavola" id="logo-pic">
+            <span class="brand-name">Bella Tavola</span>
+        </a>
+
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="navbar-element" aria-label="Ouvrir le menu de navigation">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav id="navbar">
+            <ul id="navbar-element">
+                <li class="ele-list"><a href="#hero" class="element">Accueil</a></li>
+                <li class="ele-list"><a href="#menu" class="element">Menu</a></li>
+                <li class="ele-list"><a href="#propos" class="element">À propos</a></li>
+                <li class="ele-list"><a href="#reservation" class="element element-cta">Réservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="hero">
+            <div class="hero-media">
+                <img src="images/hero.jpg" alt="Pizza napolitaine au feu de bois fraîchement sortie du four" id="hero-img">
+                <div class="hero-overlay">
+                    <p class="eyebrow">Trattoria familiale &middot; depuis 1962</p>
+                    <h1 class="hero-title">L'Italie, <span class="first-intro">une bouchée</span> à la fois</h1>
+                    <p class="hero-sub">Pizzas au feu de bois, pâtes fraîches et recettes de famille, servies avec le même amour qu'au premier jour.</p>
+                    <div id="buttons">
+                        <div class="btn">
+                            <a href="#menu">Voir le menu</a>
+                        </div>
+                        <div class="btn btn-outline">
+                            <a href="#reservation">Réserver une table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <p id="p"><span class="first-intro">Authentique cuisine italienne</span> depuis toujours.
+                Des recettes transmises de génération en génération, posées sur votre table avec le même amour qu'à leur création. Du four à bois aux sauces mijotées longuement,
+                <span class="first-intro">c'est l'Italie dans votre assiette.</span>
+            </p>
+        </section>
+
+        <section id="menu">
+            <h2 class="title">Notre Menu</h2>
+
+            <div class="filter-bar" role="group" aria-label="Filtrer le menu">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="entrees">Entrées</button>
+                <button class="filter-btn" data-filter="plats">Plats</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+            </div>
+
+            <div id="product">
+
+                
+                <div class="boxproduct" data-category="entrees">
+                    <img src="images/antipasto-bruschetta.jpg" alt="Bruschetta al pomodoro" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Bruschetta al Pomodoro</h3>
+                        <ul>
+                            <li>Pain grillé</li>
+                            <li>Tomates fraîches</li>
+                            <li>Basilic</li>
+                            <li>Huile d'olive</li>
+                        </ul>
+                        <span class="price">6 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="entrees">
+                    <img src="images/antipasto-caprese.jpg" alt="Caprese" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Caprese</h3>
+                        <ul>
+                            <li>Mozzarella di bufala</li>
+                            <li>Tomates</li>
+                            <li>Basilic frais</li>
+                        </ul>
+                        <span class="price">8 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="entrees">
+                    <img src="images/antipasto-arancini.jpg" alt="Arancini" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Arancini</h3>
+                        <ul>
+                            <li>Boulettes de riz frites</li>
+                            <li>Mozzarella fondante</li>
+                            <li>Sauce tomate</li>
+                        </ul>
+                        <span class="price">7 €</span>
+                    </div>
+                </div>
+
+               
+                <div class="boxproduct" data-category="plats">
+                    <img src="images/pizza-diavola.jpg" alt="Pizza Diavola" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Diavola</h3>
+                        <ul>
+                            <li>Salami piquant</li>
+                            <li>Sauce tomate</li>
+                            <li>Mozzarella</li>
+                        </ul>
+                        <span class="price">12 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="plats">
+                    <img src="images/pizza-marinara.jpg" alt="Pizza Marinara" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Marinara</h3>
+                        <ul>
+                            <li>Sauce tomate</li>
+                            <li>Ail</li>
+                            <li>Origan</li>
+                            <li>Huile d'olive</li>
+                        </ul>
+                        <span class="price">8 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="plats">
+                    <img src="images/pizza-capricciosa.jpg" alt="Pizza Capricciosa" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Capricciosa</h3>
+                        <ul>
+                            <li>Jambon</li>
+                            <li>Champignons</li>
+                            <li>Artichauts</li>
+                            <li>Olives</li>
+                            <li>Mozzarella</li>
+                        </ul>
+                        <span class="price">13 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="plats">
+                    <img src="images/pizza-margherita.jpg" alt="Pizza Margherita" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Margherita</h3>
+                        <ul>
+                            <li>Sauce tomate</li>
+                            <li>Mozzarella</li>
+                            <li>Basilic frais</li>
+                        </ul>
+                        <span class="price">9 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="plats">
+                    <img src="images/pizza-quattro-stagioni.jpg" alt="Pizza Quattro Stagioni" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Quattro Stagioni</h3>
+                        <ul>
+                            <li>Jambon</li>
+                            <li>Champignons</li>
+                            <li>Artichauts</li>
+                            <li>Olives</li>
+                        </ul>
+                        <span class="price">14 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="plats">
+                    <img src="images/pizza-quattro-formaggi.jpg" alt="Pizza Quattro Formaggi" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Quattro Formaggi</h3>
+                        <ul>
+                            <li>Mozzarella</li>
+                            <li>Gorgonzola</li>
+                            <li>Parmesan</li>
+                            <li>Fontina</li>
+                        </ul>
+                        <span class="price">13 €</span>
+                    </div>
+                </div>
+                
+
+                
+                <div class="boxproduct" data-category="plats">
+                    <img src="images/pasta-carbonara.jpg" alt="Spaghetti alla Carbonara" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Spaghetti alla Carbonara</h3>
+                        <ul>
+                            <li>Œuf</li>
+                            <li>Pecorino</li>
+                            <li>Guanciale</li>
+                            <li>Poivre noir</li>
+                        </ul>
+                        <span class="price">11 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="plats">
+                    <img src="images/pasta-fettuccine-alfredo.jpg" alt="Fettuccine Alfredo" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Fettuccine Alfredo</h3>
+                        <ul>
+                            <li>Beurre</li>
+                            <li>Crème</li>
+                            <li>Parmesan</li>
+                        </ul>
+                        <span class="price">11 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="plats">
+                    <img src="images/pasta-lasagne.jpg" alt="Lasagne alla Bolognese" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Lasagne alla Bolognese</h3>
+                        <ul>
+                            <li>Pâtes</li>
+                            <li>Ragù de viande</li>
+                            <li>Béchamel</li>
+                        </ul>
+                        <span class="price">13 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="plats">
+                    <img src="images/pasta-penne-arrabbiata.jpg" alt="Penne all'Arrabbiata" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Penne all'Arrabbiata</h3>
+                        <ul>
+                            <li>Sauce tomate épicée</li>
+                            <li>Ail</li>
+                            <li>Piment</li>
+                        </ul>
+                        <span class="price">10 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="plats">
+                    <img src="images/pasta-tagliatelle-ragu.jpg" alt="Tagliatelle al Ragù" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Tagliatelle al Ragù</h3>
+                        <ul>
+                            <li>Sauce bolognaise</li>
+                            <li>Parmesan</li>
+                        </ul>
+                        <span class="price">12 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="plats">
+                    <img src="images/pasta-vongole.jpg" alt="Spaghetti alle Vongole" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Spaghetti alle Vongole</h3>
+                        <ul>
+                            <li>Palourdes</li>
+                            <li>Vin blanc</li>
+                            <li>Ail</li>
+                            <li>Persil</li>
+                        </ul>
+                        <span class="price">15 €</span>
+                    </div>
+                </div>
+
+                
+                <div class="boxproduct" data-category="desserts">
+                    <img src="images/dessert-panna-cotta.jpg" alt="Panna Cotta" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Panna Cotta</h3>
+                        <ul>
+                            <li>Crème cuite</li>
+                            <li>Coulis de fruits rouges</li>
+                        </ul>
+                        <span class="price">5 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="desserts">
+                    <img src="images/dessert-tiramisu.jpg" alt="Tiramisù" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Tiramisù</h3>
+                        <ul>
+                            <li>Café</li>
+                            <li>Mascarpone</li>
+                            <li>Cacao</li>
+                        </ul>
+                        <span class="price">6 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="desserts">
+                    <img src="images/desert-vanillagelato.jpg" alt="Gelato Vanille" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Gelato Vanille</h3>
+                        <ul>
+                            <li>Glace vanille artisanale</li>
+                            <li>Éclats de vanille</li>
+                        </ul>
+                        <span class="price">5 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="desserts">
+                    <img src="images/desert-pistachiagelato.jpg" alt="Gelato Pistache" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Gelato Pistache</h3>
+                        <ul>
+                            <li>Glace pistache</li>
+                            <li>Éclats de pistache</li>
+                        </ul>
+                        <span class="price">5 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="desserts">
+                    <img src="images/desert-sfogliatella.jpg" alt="Sfogliatella" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Sfogliatella</h3>
+                        <ul>
+                            <li>Pâte feuilletée croustillante</li>
+                            <li>Ricotta sucrée</li>
+                        </ul>
+                        <span class="price">6 €</span>
+                    </div>
+                </div>
+                <div class="boxproduct" data-category="desserts">
+                    <img src="images/desert-canoli.jpg" alt="Cannoli" class="rec-img" loading="lazy">
+                    <div class="rec-details">
+                        <h3>Cannoli</h3>
+                        <ul>
+                            <li>Coques croustillantes</li>
+                            <li>Ricotta sucrée</li>
+                            <li>Pistache</li>
+                        </ul>
+                        <span class="price">6 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <p id="no-results" hidden>Aucun plat dans cette catégorie pour le moment.</p>
+        </section>
+
+        <section id="propos">
+            <h2 class="title">Notre Histoire</h2>
+            <div id="historypic">
+                <div class="history-box">
+                    <p>Tout a commencé avec une idée simple : la bonne cuisine rassemble les gens. Chez Bella Tavola, nos recettes viennent d'une petite cuisine de Naples, transmises de génération en génération et préparées aujourd'hui comme elles l'ont toujours été — à la main, avec patience, et avec les meilleurs ingrédients.
+                    Chaque pizza est préparée à la commande, chaque sauce mijotée lentement, et chaque client accueilli comme un membre de la famille. Nous ne servons pas seulement un repas — nous partageons un petit morceau de chez nous.</p>
+                    <p class="signature">— La Famille Rossi</p>
+                </div>
+                <div class="history-box history-box-img">
+                    <img src="images/chef-pic.png" alt="Le chef de Bella Tavola en cuisine">
+                </div>
+            </div>
+        </section>
+
+        <section id="reservation">
+            <div class="reserv-box">
+                <h2 class="title">Réservation</h2>
+                <p>
+                    <span id="question">Envie de goûter un peu d'Italie ?</span><br><br>
+                    Réservez votre table en quelques secondes et laissez-nous vous accueillir comme un membre de la famille.
+                </p>
+            </div>
+            <div class="reserv-box">
+                <form id="reservation-form" novalidate>
+                    <div class="form-row">
+                        <label>Prénom
+                            <input type="text" name="firstname" required>
+                            <span class="field-error" data-field="firstname"></span>
+                        </label>
+                        <label>Nom
+                            <input type="text" name="lastname" required>
+                            <span class="field-error" data-field="lastname"></span>
+                        </label>
+                    </div>
+
+                    <label>Email
+                        <input type="email" name="email" required>
+                        <span class="field-error" data-field="email"></span>
+                    </label>
+
+                    <div class="form-row">
+                        <label>Date
+                            <input type="date" name="date" required>
+                            <span class="field-error" data-field="date"></span>
+                        </label>
+                        <label>Heure
+                            <input type="time" name="time" required>
+                            <span class="field-error" data-field="time"></span>
+                        </label>
+                    </div>
+
+                    <label>Nombre de personnes
+                        <input type="number" name="guests" min="1" max="20" value="2" required>
+                        <span class="field-error" data-field="guests"></span>
+                    </label>
+
+                    <label>Une demande particulière ?
+                        <textarea name="note" placeholder="Table en terrasse, anniversaire, allergie..."></textarea>
+                    </label>
+
+                    <button type="submit" id="btn-res">Réserver une table</button>
+
+                    <p id="form-feedback" role="status" hidden></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-box">
+            <h3>Bella Tavola</h3>
+            <p>L'Italie dans votre assiette</p>
+            <div class="social-media">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Via dei Coronari, 12<br>00186 Roma RM, Italie</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <p><a href="tel:+390612345678">+39 06 1234 5678</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-regular fa-envelope"></i>
+                <p><a href="mailto:contact@bellatavola.it">contact@bellatavola.it</a></p>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>Horaires</h3>
+            <p>Lun – Ven : 12h – 23h</p>
+            <p>Sam – Dim : 12h – minuit</p>
+        </div>
+
+        <p class="copyright">&copy; <span id="year"></span> Bella Tavola. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
